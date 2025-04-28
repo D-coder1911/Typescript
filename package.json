@@ -1,0 +1,27 @@
+{
+  "name": "typescript",
+  "version": "1.0.0",
+  "description": "### Typescript'dagi common data types (ma'lumot turlari) - number  - string - boolean - undefined  - null - symbol - bigint - any - unknown - never - array - object - function",
+  "main": "index.js",
+  "scripts": {
+    "start:dev": "concurrently \"tsc -w \"   \"nodemon dist/main.js\"",
+    "build": "tsc",
+    "start:prod": "node dist/main.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^9.1.2",
+    "express": "^5.1.0",
+    "mongoose": "^8.13.2",
+    "ua-parser-js": "^2.0.3"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.1",
+    "@types/node": "^22.14.1",
+    "@types/ua-parser-js": "^0.7.39",
+    "nodemon": "^3.1.10",
+    "typescript": "^5.8.3"
+  }
+}
